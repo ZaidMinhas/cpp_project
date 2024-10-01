@@ -4,17 +4,17 @@ void testPlayer() {
     //printf("This is the player driver");
 
     
-    // Create territories and hands using raw pointers
+    // Create territories and hands /// raw pointers -- not smart pointers
      std::vector<std::string*> territories;
      territories.push_back(new std::string("Territory1"));
      territories.push_back(new std::string("Territory2"));
 
-     // Print the territories using printf
+    //territories display
     for (const auto& territory : territories) {
         printf("%s\n", territory->c_str());  // Use c_str() to convert std::string to C-style string
     }
 
-    // Cleanup: Don't forget to delete the allocated strings
+   //cleanup
     for (auto territory : territories) {
         delete territory;
     }
