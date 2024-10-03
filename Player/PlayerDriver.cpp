@@ -30,7 +30,7 @@ void testPlayer() {
     orders.push_back(new std::string("Order 1"));
     orders.push_back(new std::string("Order 2"));
 
-    string name = "Player K";
+    std::string name = "Player K";
 
     // Instantiate a Player object using the parameterized constructor
     Player player1(name, territories, hand, orders);

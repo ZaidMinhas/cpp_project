@@ -25,7 +25,9 @@ public:
     void toDefend() const;
     void issueOrder(std::string);
     std::vector<std::string*> getOrderList();
-    std::string getName() const;
+    std::string getName(){
+        return _name;
+    }
     void printOrder() const;
 
 private:
